@@ -9,4 +9,3 @@ window.addEventListener('beforeprint', () => {
 window.addEventListener('afterprint', () => {
   roles.forEach((role, index) => { role.open = previouslyOpen[index] ?? false; });
 });
-document.getElementById('print-resume').addEventListener('click', () => window.print());
